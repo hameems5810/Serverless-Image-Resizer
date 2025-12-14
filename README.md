@@ -17,8 +17,8 @@ Large, unoptimized images slow down websites and waste storage—but manually re
 ---
 
 ## Architecture Diagram
-**Flow:**  
-User → S3 (**input**) → S3 ObjectCreated event → Lambda (**resizer + Pillow layer**) → S3 (**output**) → CloudWatch (logs/metrics)
+**Flow:**  User → S3 (**input**) → S3 ObjectCreated event → Lambda (**resizer + Pillow layer**) → S3 (**output**) → CloudWatch (logs/metrics)
+<img width="5259" height="3191" alt="Serverless Image Resizer" src="https://github.com/user-attachments/assets/33afd0b9-94c9-4f7e-8225-c82446a3b332" />
 
 **Core components**
 - **AWS Lambda (Python 3.12):** compute that runs only when uploads happen
