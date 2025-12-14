@@ -157,9 +157,3 @@ User → S3 (**input**) → S3 ObjectCreated event → Lambda (**resizer + Pillo
 <p align="center">
   <img width="975" height="578" alt="CloudWatch log stream showing S3-triggered run" src="https://github.com/user-attachments/assets/6bc56332-2613-43c6-ae76-be4706a6bc07" />
 </p>
-
-
----
-
-## Project Status
-✅ Working end-to-end: upload → trigger → resize → output + logs/metrics.
